@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".views.article.ViewArticleActivity">
+
+    <com.smarteist.autoimageslider.SliderView
+        android:id="@+id/imageSlider"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_200sdp"
+        android:layout_marginBottom="4dp"
+        app:sliderAnimationDuration="600"
+        app:sliderAutoCycleDirection="back_and_forth"
+        app:sliderAutoCycleEnabled="true"
+        app:sliderIndicatorAnimationDuration="600"
+        app:sliderIndicatorEnabled="true"
+        app:sliderIndicatorGravity="center_horizontal|bottom"
+        app:sliderIndicatorOrientation="horizontal"
+        app:sliderIndicatorRadius="2dp"
+        app:sliderIndicatorRtlMode="auto"
+        app:sliderIndicatorSelectedColor="@color/txtColor4"
+        app:sliderIndicatorUnselectedColor="@color/txtColor2"
+        app:sliderScrollTimeInSec="1"
+        app:sliderStartAutoCycle="true" />
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent">
+
+        <RelativeLayout
+            android:id="@+id/goBack"
+            android:layout_width="match_parent"
+            android:padding="@dimen/_8sdp"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="@dimen/_24sdp"
+                android:layout_height="@dimen/_24sdp"
+                android:src="@drawable/ic_back"
+                app:tint="@color/main"/>
+
+        </RelativeLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/imageSlider">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_8sdp"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/article_title"
+                android:textSize="@dimen/_16sdp"
+                android:textColor="@color/txtColor1"
+                android:layout_margin="@dimen/_4sdp" />
+
+            <TextView
+                android:id="@+id/body"
+                android:layout_below="@id/title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Eiusmod proident est dolore aliqua esse quis amet deserunt magna nostrud elit velit excepteur. Irure veniam consectetur Lorem labore pariatur cillum aute. Ex cillum aute fugiat veniam cupidatat sunt aute cupidatat. Fugiat in cupidatat dolore eiusmod sit aute deserunt."
+                android:textSize="@dimen/_14sdp"
+                android:textColor="@color/txtColor4"
+                android:layout_margin="@dimen/_4sdp" />
+
+            <LinearLayout
+                android:id="@+id/inputLay"
+                android:layout_below="@id/body"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/input1"
+                android:gravity="center">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/comment"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/_4sdp"
+                    android:layout_marginVertical="@dimen/_8sdp"
+                    android:layout_weight="1"
+                    android:autoSizeTextType="uniform"
+                    android:gravity="start"
+                    android:background="@android:color/transparent"
+                    android:hint="@string/new_comment"
+                    android:inputType="textMultiLine"
+                    android:minLines="2"
+                    android:padding="@dimen/_12sdp"
+                    android:textSize="@dimen/_14ssp" />
+
+                <ImageView
+                    android:id="@+id/btnSend"
+                    android:layout_width="@dimen/_32sdp"
+                    android:layout_height="@dimen/_32sdp"
+                    android:paddingVertical="@dimen/_4sdp"
+                    android:src="@drawable/ic_send"
+                    android:layout_margin="@dimen/_8sdp"
+                    app:tint="@color/main" />
+
+            </LinearLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/usersComments"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/inputLay"
+                android:nestedScrollingEnabled="false"
+                tools:listitem="@layout/item_comment" />
+
+            <androidx.legacy.widget.Space
+                android:layout_below="@id/usersComments"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_32sdp"/>
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

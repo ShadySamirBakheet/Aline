@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">Aline</string>
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_messages">Messages</string>
+    <string name="title_profile">Profile</string>
+    <string name="user_name">User Name</string>
+    <string name="password">Password</string>
+    <string name="forgot_password">FORGOT PASSWORD?</string>
+    <string name="sign_in">SIGN IN</string>
+    <string name="sign_up">SIGN UP</string>
+    <string name="email">Email</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="are_you_admin">Are You Admin?</string>
+    <string name="already_have_an_account">"Already have an account, "</string>
+    <string name="full_name">Full Name</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="id_number">ID Number</string>
+    <string name="bank_account">Bank Account</string>
+    <string name="sign_out">Sign Out</string>
+    <string name="add_article">Add Article</string>
+    <string name="add_cover_article">Add Cover Article</string>
+    <string name="write_the_article">write the article</string>
+    <string name="article_title">Article Title ....</string>
+    <string name="new_comment">New Comment ....</string>
+    <string name="save_edit">Save Edit</string>
+    <string name="admin">Admin</string>
+    <string name="add_new_department">Add New Department</string>
+    <string name="select_article_department">Select Article Department</string>
+    <string name="article">Article</string>
+</resources>

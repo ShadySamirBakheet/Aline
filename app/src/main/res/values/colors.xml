@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <color name="main">#FACB03</color>
+
+    <color name="black">#FF000000</color>
+
+    <!--App Color-->
+    <color name="btnColor1">#FACB03</color>
+    <color name="btnColor2">#ffffff</color>
+    <color name="btnColor3">#B1B0B0</color>
+    <color name="btnColor4">#2F3133</color>
+    <color name="btnColor5">#FF0000</color>
+
+    <color name="txtColor1">#FF000000</color>
+    <color name="txtColor2">#FFFFFFFF</color>
+    <color name="txtColor3">#FACB03</color>
+    <color name="txtColor4">#808080</color>
+
+    <color name="background1">#f1f1f1</color>
+
+    <color name="statusBarColor">#FACB03</color>
+    <color name="bottomBar">#FACB03</color>
+
+    <color name="cardBackgroundColor">#e5e5e5</color>
+    <color name="inputColor">#EEE</color>
+
+    <color name="background">#FFFFFFFF</color>
+
+</resources>

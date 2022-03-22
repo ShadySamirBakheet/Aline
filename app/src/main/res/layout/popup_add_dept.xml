@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/deptAdd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/_4sdp"
+        android:layout_marginVertical="@dimen/_8sdp"
+        android:background="@drawable/input1"
+        android:hint="@string/add_new_department"
+        android:inputType="textPersonName"
+        android:padding="@dimen/_12sdp"
+        android:textSize="@dimen/_14ssp" />
+
+    <TextView
+        android:id="@+id/save"
+        android:layout_below="@id/deptAdd"
+        style="@style/btnStyleHome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_app3"
+        android:layout_margin="12dp"
+        android:text="Save"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:textSize="@dimen/_12ssp" />
+
+</RelativeLayout>

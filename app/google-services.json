@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "910877680070",
+    "project_id": "aline-1fffb",
+    "storage_bucket": "aline-1fffb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:910877680070:android:ca68eb43fb8ed27eabd2c7",
+        "android_client_info": {
+          "package_name": "com.app.aline"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "910877680070-kv10mm3ofgmk36edo203kchdai0jcpun.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.app.aline",
+            "certificate_hash": "2441a0b9d89c227ba480a2fbcdcff270428eb5a8"
+          }
+        },
+        {
+          "client_id": "910877680070-p6tcn0gelbq6gjaecdl0onlptehej01s.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCVNZ9OYy8L1YXKBxnGkIiqtlf__tx9gW4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "910877680070-p6tcn0gelbq6gjaecdl0onlptehej01s.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
